@@ -1,0 +1,30 @@
+<div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input type="text" 
+    [(ngModel)] = 'studentFilter'
+    class="form-control" placeholder="Search Name">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</div>
+
+<br /><hr/>
+
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr class="info">
+      <th>#</th>
+      <th>REG NUMBER</th>
+      <th>NAME</th>
+      <th>CURRENT CGPA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr 
+      *ngFor= 'let student of students | listFilter : studentFilter '>
+      <td>1</td>
+      <td>{{student.rollnum}} </td>
+      <td>{{student.name | uppercase }}</td>
+      <td>{{student.cgpa | number : '1.2-2'}}</td>
+    </tr>
+  </tbody>
+</table>
