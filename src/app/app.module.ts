@@ -4,15 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { ProductFilterPipe }from './list/list.filter'
+import { routes } from './app.router';
+import { DefaultDispComponent } from './default-disp/default-disp.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    DefaultDispComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    routes
   ],
   providers: [],
   bootstrap: [AppComponent]
