@@ -6,12 +6,14 @@ import { ListComponent } from './list/list.component';
 import { ProductFilterPipe }from './list/list.filter'
 import { routes } from './app.router';
 import { DefaultDispComponent } from './default-disp/default-disp.component';
+import { DetailsComponent } from './details/details.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     ProductFilterPipe,
-    DefaultDispComponent
+    DefaultDispComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
