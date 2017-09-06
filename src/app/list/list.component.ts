@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Details } from './list.detail';
 import { ListService } from './list.services';
+import { DetailsComponent } from '../details/details.component'
 @Component({
   selector: 'app-list',
   moduleId: module.id,
@@ -16,5 +17,7 @@ export class ListComponent implements OnInit {
   ngOnInit() {
     this.students = this._listServices.getDetails();
   }
-
+send(student : Details){
+    
+}
 }

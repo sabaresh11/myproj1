@@ -6,6 +6,7 @@ export class ListService {
     getDetails () : Details[] {
         return [
     {
+        "id" :1,
     "name" : "sabaresh",
     "rollnum" : 1406029,
      "dob" : "September 11, 1996" ,
@@ -15,6 +16,7 @@ export class ListService {
 
   },
 {
+    "id" : 2,
   "name" : "srinivasan",
     "rollnum" : 1406037,
     "dob" : "July 07, 1997" ,
